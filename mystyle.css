@@ -6,7 +6,7 @@ header{
     line-height: 2em;
 }
 
-h3{
+h2, h3{
     color: #071C33;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -19,6 +19,33 @@ body{
     font-size: 1.1em;
 }
 
+nav{
+    background-color:#071C33;
+    color:#FBEAEB;
+    line-height: 2em;
+    display: block;
+}
+
+nav li{
+    display: inline;
+    padding-right: 100px;
+    list-style-type: none;
+}
+
+nav a:link{
+    color:#FBEAEB;
+    text-decoration: none;
+}
+nav a:visited{
+    color:#FBEAEB;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+
+img{
+    vertical-align: bottom;
+}
 
 main{
     background-color: #FBEAEB;
@@ -28,13 +55,24 @@ footer{
     background-color:#071C33;
     color:#FBEAEB;
 }
+
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+ol{
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
 #closingStatement{
     color:#071C33;
 }
 
 .locationName{
     font-weight: bold;
-    color:blue;
+    color:rgb(183, 0, 255);
 }
 .importantStuff{
     font-weight: bold;
