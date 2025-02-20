@@ -66,6 +66,27 @@ ol{
     list-style-position: outside;
 }
 
+caption{
+    caption-side:top;
+    font-weight: bold;
+}
+
+table{
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+
+tr, td, th{
+    border: solid 1px black;
+    padding: 2px;
+    width: 200px;
+}
+
+th{
+    background-color:#071C33;
+    color:#FBEAEB;
+}
+
 #closingStatement{
     color:#071C33;
 }
