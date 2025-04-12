@@ -1,0 +1,60 @@
+<!--This is a page for the pizza order form-->
+<!--Need to get customer name, address, phone, pizza size choice (from at least 3), topping choices (from at least 5), and a notes section-->
+<!--Need to make form better/more logical, add some CSS-->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This page contains a form to order pizza">
+        <meta name="keywords" content="assignment, pizza, form, order, order pizza, pizza order form">
+        <title>Pizza Order Form</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Pizza Order Form</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Homepage">Home</a></li>
+                <li><a href="page2.html" title="Cat Pictures!">Cat Pictures!</a></li>
+                <li><a href="page3.html" title= "Page 3">Page 3</a></li>
+                <li><a href="tableofcourses.html" title= "CCP College Courses">CCP College Courses</a></li>
+                <li><a href="pizzaform.html" title= "Pizza Order Form">Pizza Order Form</a></li>
+            </ul>
+        </nav>
+        <form id= "order_form" action="" method="post">
+            <p>Order Your Pizza Here!</p>
+            Name:       <input type="text" name="name" id="name" autofocus><br>
+            Address:    <input type="text" name="address" id="address"><br>
+            Phone Number:   <input type="tel" name="phone" id="phone"><br>
+            <fieldset>
+                Size:
+                <input type="radio" name="size" id="small" value="small"><label for="small">Small</label>
+                <input type="radio" name="size" id="medium" value="medium"><label for="medium">Medium</label>
+                <input type="radio" name="size" id="large" value="large"><label for="large">Large</label>
+                <input type="radio" name="size" id="xlarge" value="xlarge"><label for="xlarge">X-Large</label><br>
+            </fieldset>
+            <fieldset>
+                Toppings:   <br>
+                <input type="checkbox" name="toppings" id="pepperoni"><label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox" name="toppings" id="sausage"><label for="sausage">Sausage</label><br>
+                <input type="checkbox" name="toppings" id="bananapeppers"><label for="bananapeppers">Banana Peppers</label><br>
+                <input type="checkbox" name="toppings" id="bacon"><label for="bacon">Bacon</label><br>
+                <input type="checkbox" name="toppings" id="extracheese"><label for="extracheese">Extra Cheese</label><br>
+            </fieldset>
+            <fieldset>            
+                Notes:  <br>
+                <textarea name="notes" id="notes"></textarea><br>
+            </fieldset>
+            <input type="submit" value="Confirm" id="confirm">
+            <input type="reset" value="Reset" id="reset">
+
+
+        </form> 
+    </body>
+</html>
