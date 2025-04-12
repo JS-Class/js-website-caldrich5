@@ -6,23 +6,44 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Here is a description of this page">
-        <meta name="keywords" content="keywords go here">
-        <title>Chris Aldrich's Page 2!</title>
+        <meta name="description" content="Cat image carousel">
+        <meta name="keywords" content="cat, cats, cat pics, cat photos">
+        <title>Chris Aldrich's Cats!</title>
         <link rel="stylesheet" href="mystyle.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $(".slider").bxSlider({
+                captions: true,
+                auto: true,
+                pause: 5000
+            });
+            });
+          </script>
     </head>
 
     <body>
         <header>
-            <h1>This is the second page of my website</h1>
+            <h1>Gallery of My Cats</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="index.html" title="Homepage">Home</a></li>
-                <li><a href="page2.html" title="Page 2">Page 2</a></li>
+                <li><a href="page2.html" title="Cat Pictures!">Cat Pictures!</a></li>
                 <li><a href="page3.html" title= "Page 3">Page 3</a></li>
                 <li><a href="tableofcourses.html" title= "CCP College Courses">CCP College Courses</a></li>
                 <li><a href="pizzaform.html" title= "Pizza Order Form">Pizza Order Form</a></li>
             </ul>
         </nav>
+        <div class="slider">
+            <div><img src="images/Oscar.jpg" alt = "Oscar, a black and white tuxedo cat, laying on the floor" title="Oscar laying on the floor"> </div>
+            <div><img src="images/Lucky.jpg" alt = "Lucky, a grey striped cat, with her paws crossed on a bed" title="Lucky sleeping on the bed"></div>
+            <div><img src="images/Diana_Ceres.jpg" alt = "Diana, a brown striped cat, lays in a cat bed while Ceres, a black cat, sits next to her" title = "Diana (in the bed) and Ceres"></div>
+            <div><img src="images/Percy_Helly.jpg" alt = "Percy, a brown striped cat, plays with a toy while Helly, a calico kitten, watches from above on a stair step" title = "Percy (playing with the toy) and Helly"></div>
+          </div>
+      
+
     </body>
